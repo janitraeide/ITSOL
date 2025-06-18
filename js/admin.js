@@ -68,10 +68,7 @@ async function showApplications() {
                     <th>Name</th>
                     <th>Email</th>
                     <th>Position</th>
-<<<<<<< HEAD
-=======
                     <th>Cover letter</th>
->>>>>>> ad44272 (Initial commit)
                     <th>CV</th>
                     <th>Date</th>
                 </tr>

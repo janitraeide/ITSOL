@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-async function handleJobApplication(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const file = form.cv.files[0];
-    
-=======
 // Modal functionality
 function openJobApplication(jobTitle, jobId) {
     const modal = document.getElementById('jobModal');
@@ -142,16 +134,11 @@ async function handleJobApplication(event) {
     submitBtn.textContent = 'SUBMITTING...';
     submitBtn.disabled = true;
 
->>>>>>> ad44272 (Initial commit)
     try {
         // Create unique file name
         const fileExt = file.name.split('.').pop();
         const fileName = `${Date.now()}_${Math.random().toString(36).substring(7)}.${fileExt}`;
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> ad44272 (Initial commit)
         // Upload file directly to the bucket root
         const { error: fileError } = await supabaseClient
             .storage
@@ -160,25 +147,15 @@ async function handleJobApplication(event) {
                 cacheControl: '3600',
                 upsert: false
             });
-<<<<<<< HEAD
-            
-        if (fileError) throw fileError;
-        
-=======
 
         if (fileError) throw fileError;
 
->>>>>>> ad44272 (Initial commit)
         // Get the file URL
         const { data } = await supabaseClient
             .storage
             .from('cvs')
             .getPublicUrl(fileName);
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> ad44272 (Initial commit)
         // Submit the application data
         const { error } = await supabaseClient
             .from('job_applications')
@@ -187,22 +164,6 @@ async function handleJobApplication(event) {
                 email: form.email.value,
                 phone: form.phone.value,
                 position: form.position.value,
-<<<<<<< HEAD
-                cover_letter: form.cover_letter.value,
-                cv_url: data.publicUrl
-            }]);
-
-        if (error) throw error;
-        
-        alert('Application submitted successfully!');
-        form.reset();
-        
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Failed to submit application. Please try again.');
-    }
-}
-=======
                 job_id: form.job_id.value,
                 cover_letter: form.cover_letter.value,
                 cv_url: data.publicUrl,
@@ -285,4 +246,3 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
->>>>>>> ad44272 (Initial commit)
