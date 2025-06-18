@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - EXABYTE</title>
-<<<<<<< HEAD
-=======
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="alternate icon" href="./favicon.ico">
     <link rel="mask-icon" href="./favicon.svg" color="#becf75">
 
->>>>>>> ad44272 (Initial commit)
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-<<<<<<< HEAD
-        <div class="navbar">
-            <div class="nav-logo"><a href="index.html#hero">EXABYTE</a></div>
-=======
    <div class="navbar">
             <div class="nav-logo"><a href="index.html#hero">EXABYTE</a></div>
             <!-- <div class="nav-logo"><a href="index.html#hero">EXABYTE</a></div> -->
->>>>>>> ad44272 (Initial commit)
             <div class="nav-btn-wrapper">
 
                 <div class="nav-btn">
@@ -36,51 +28,12 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ad44272 (Initial commit)
         <div class="cs"></div>
 
         <section class="careers">
             <div class="contact-container">
                 <div class="contact-header">
-<<<<<<< HEAD
-                    <h2 data-split="lines">JOIN OUR TEAM</h2>
-                </div>
-                
-                <div class="contact-content">
-                    <!-- Update form with proper name attributes -->
-                    <form class="contact-form" onsubmit="handleJobApplication(event)">
-                        <div class="form-group">
-                            <input type="text" name="full_name" placeholder="FULL NAME" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="EMAIL" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="PHONE" required>
-                        </div>
-                        <div class="form-group">
-                            <select name="position" required>
-                                <option value="" disabled selected>SELECT POSITION</option>
-                                <option value="developer">Software Developer</option>
-                                <option value="designer">UI/UX Designer</option>
-                                <option value="manager">Project Manager</option>
-                                <option value="analyst">Business Analyst</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="cover_letter" placeholder="COVER LETTER" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
-                            <small>Upload your CV (PDF, DOC, DOCX)</small>
-                        </div>
-                        <button type="submit" class="submit-btn">SUBMIT APPLICATION</button>
-                    </form>
-
-=======
                     <h2 data-split="lines">CAREER OPPORTUNITIES</h2>
                     <p class="careers-subtitle" data-split="lines">Join our dynamic team and build your future with us</p>
                 </div>
@@ -325,16 +278,10 @@
                             <button class="apply-btn" onclick="openJobApplication('Cloud Solutions Architect', 20)">APPLY NOW</button>
                         </div>
                     </div>
->>>>>>> ad44272 (Initial commit)
                 </div>
             </div>
         </section>
 
-<<<<<<< HEAD
-        <section class="footer">
-            <h3>EXABYTE</h3>
-        </section>
-=======
         <!-- Job Application Modal -->
         <div id="jobModal" class="modal">
             <div class="modal-content">
@@ -381,7 +328,6 @@
             <h3>EXABYTE</h3>
         </section>
 
->>>>>>> ad44272 (Initial commit)
     </main>
 
     <script src="https://unpkg.com/split-type"></script>
@@ -408,12 +354,8 @@
         }
       })
 
-<<<<<<< HEAD
-      const lenis = new Lenis({
-=======
       // Make lenis globally accessible
       window.lenis = new Lenis({
->>>>>>> ad44272 (Initial commit)
     duration: 0.5,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     orientation: 'vertical',
@@ -425,21 +367,13 @@
 
 // Integrate with GSAP
 function raf(time) {
-<<<<<<< HEAD
-    lenis.raf(time);
-=======
     window.lenis.raf(time);
->>>>>>> ad44272 (Initial commit)
     requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
 
-<<<<<<< HEAD
-      </script></script>
-=======
       </script>
->>>>>>> ad44272 (Initial commit)
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script>
     // Initialize Supabase

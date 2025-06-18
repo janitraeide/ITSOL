@@ -16,25 +16,14 @@ body {
     color: var(--text-color);
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-<<<<<<< HEAD
-=======
     width: 100%;
     min-width: 320px;
->>>>>>> ad44272 (Initial commit)
 }
 
 a{
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
-img {
-    max-width: 100%;
-    height: auto;
-}
-
->>>>>>> ad44272 (Initial commit)
 
 .navbar {
     width: 25rem;
@@ -864,9 +853,9 @@ h1 sup {
 }
 
 .careers{
-<<<<<<< HEAD
-    padding:var(--padding)
-=======
+
+    padding:var(--padding);
+
     padding:  var(--padding) 4rem;
     min-height: 100vh;
     width: 100%;
@@ -877,7 +866,7 @@ h1 sup {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
->>>>>>> ad44272 (Initial commit)
+
 }
 
 .careers select {
@@ -932,12 +921,12 @@ h1 sup {
     font-size: 0.8rem;
 }
 
-<<<<<<< HEAD
+
 .cs{
     width: 100%;
     height: 20vh;
 }
-=======
+
 /* Jobs Grid Styles */
 .jobs-grid {
     display: grid;
@@ -1631,9 +1620,9 @@ h1 sup {
 
 
 
-/* ========================================= */
+/* ====== */
 /*              Mobile Responsiveness        */
-/* ========================================= */
+/* ====== */
 
 @media (max-width: 768px) {
 
@@ -1784,4 +1773,4 @@ h1 sup {
     }
 }
 
->>>>>>> ad44272 (Initial commit)
+
